@@ -21,10 +21,10 @@ connection.query('SELECT * FROM products', function(err,res){
 	// products.push(new inquirer.Separator());
 
 	//NEED THIS
-	choices();
+	idChoice();
 });
 
-function choices(){
+function idChoice(){
 	inquirer.prompt([
 		{
 			type:'input',
@@ -58,16 +58,38 @@ function quantityCheck(id, units){
 		// res[id-1]===undefined needs to be first, otherwise errors because cannot compare undefined with an integer
 		if(res[id-1] === undefined){
 			console.log("That's not one of the choices! Do it again!");
-			choices();
+			idChoice();
 		}else if(units > res[id-1].stock_quantity){
 			console.log('Why do you need so many?? Please reinput values again.');
-			choices(); 
+			idChoice();
 		}else{
-			console.log(res[1].stock_quantity);
-			console.log('AYYYYYOOOOo');
+			updateProduct(id, res[id-1].stock_quantity ,units, res[id-1].product_name, res[id-1].price);
 		}
 	});
 };
+
+function updateProduct(id,initialUnits,units,whatYouBought,price){
+	connection.query('UPDATE products SET ? WHERE ?',
+		[
+			{
+				stock_quantity: initialUnits - units
+			},
+			{
+				item_id: id
+			}
+		],
+	 function(err,res){
+	 	console.log('Thank you for your patronage. Here is your',units,'unit(s) of',whatYouBought + '.');
+	 	console.log('=======================================');
+	 	console.log("That'll be $" + units*price);
+	 	console.log(res.affectedRows + ' products updated.');
+	 	connection.end();
+	 });
+}
+
+
+
+
 
 
 

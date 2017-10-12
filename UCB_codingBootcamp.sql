@@ -43,6 +43,8 @@ VALUES('Puppies', 'Pets', 499.99, 20);
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUES('Memes', 'Electronics', 70.99, 101);
 
+UPDATE products SET stock_quantity = stock_quantity + 1 WHERE item_id = 1;
+
 SELECT * FROM products;
 
 
