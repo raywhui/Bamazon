@@ -63,26 +63,25 @@ function quantityCheck(id, units){
 			console.log('Why do you need so many?? Please reinput values again.');
 			idChoice();
 		}else{
-			updateProduct(id, res[id-1].stock_quantity ,units, res[id-1].product_name, res[id-1].price);
+			updateProduct(id, res[id-1].stock_quantity ,units, res[id-1].product_name, res[id-1].price, res[id-1].product_sales);
 		}
 	});
 };
 
-function updateProduct(id,initialUnits,units,whatYouBought,price){
+function updateProduct(id,initialUnits,units,whatYouBought,price,productSales){
 	connection.query('UPDATE products SET ? WHERE ?',
 		[
 			{
-				stock_quantity: initialUnits - units
+				stock_quantity: initialUnits - units,
+				product_sales: productSales + price*units
 			},
 			{
 				item_id: id
 			}
 		],
 	 function(err,res){
-	 	console.log('Thank you for your patronage. Here is your',units,'unit(s) of',whatYouBought + '.');
-	 	console.log('=======================================');
-	 	console.log("That'll be $" + units*price);
-	 	console.log(res.affectedRows + ' products updated.');
+	 	console.log('\nThank you for your patronage. Here is your',units,'unit(s) of',whatYouBought + '.' +'\n'); 	
+	 	console.log("That'll be $" + units*price + '.\n');
 	 	connection.end();
 	 });
 }

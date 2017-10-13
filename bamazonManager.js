@@ -154,19 +154,3 @@ function createProduct(){
 	})
 };
 
-	// connection.query('UPDATE products SET ? WHERE ?',
-	// 	[
-	// 		{
-	// 			stock_quantity: initialUnits - units
-	// 		},
-	// 		{
-	// 			item_id: id
-	// 		}
-	// 	],
-	//  function(err,res){
-	//  	console.log('Thank you for your patronage. Here is your',units,'unit(s) of',whatYouBought + '.');
-	//  	console.log('=======================================');
-	//  	console.log("That'll be $" + units*price);
-	//  	console.log(res.affectedRows + ' products updated.');
-	//  });
-
