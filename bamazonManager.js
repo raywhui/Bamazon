@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
 	host:'localhost',
 	port:3306,
 	user:'root',
-	password:'7seas1000suns',
+	password:'',
 	database:'bamazon'
 });
 
@@ -144,7 +144,8 @@ function createProduct(){
     		product_name: answers.product_name,
     		department_name: answers.department_name,
       	price: answers.price,
-      	stock_quantity: answers.stock_quantity
+      	stock_quantity: answers.stock_quantity,
+      	product_sales: 0
     	},
     	function(err, res) {
     	console.log('\n'+answers.product_name+' added to '+ answers.department_name+' at $'+answers.price+'. Only '+answers.stock_quantity+' left in stock.\n');
