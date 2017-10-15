@@ -34,46 +34,67 @@ This CLI uses 3 files: bamazonCustomer.js, bamazonManager.js, and bamazonSupervi
 ### Bamazon Customer
 When running bamazonCustomer.js, the terminal will print out a list of items from your local database, each with an ID, name, and price. The user is then prompted to input the ID and quantity of the item they wish to purchase. Once the transaction is complete, the terminal will show how many of what item they have purcahsed and the total cost. If the user inputs an ID that is not shown or a quantity that the database doesn't have, the terminal will give the user an error message and will be prompted to input ID and quantity again.
 
-[INSERT GIF HERE]
+![Bamazon Customer](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonCustomer.gif)
 
 ### Bamazon Manager
 When running bamazonManager.js, the user is given 4 options to choose from: View Products for Sale, View Low Inventory, Add to Inventory, and Add New Product.
 
-View Products for Sale:
+**View Products for Sale:**
+
 As it states, this option will print all the products in the database and its relevant information, including ID, name, price, and quantity.
 
-[INSERT GIF HERE]
+![Bamazon Manager View](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerView.gif)
 
 
-View Low Inventory:
+**View Low Inventory:**
+
 View Low Inventory will print out products with a quantity of 5 or lower, and includes all the same information for each item as shown in View Products for Sale.
 
-[INSERT GIF HERE]
+![Bamazon Manager Low](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerLow.gif.gif)
 
 
-Add to Inventory:
+**Add to Inventory:**
+
 Adds more quantity to a particular item. The option will prompt the user to input the ID of the item they wish to add more inventory to and the amount they wish to add. The newly updated item can be seen when the user views products again.
 
-[INSERT GIF HERE]
+![Bamazon Manager Add Inventory](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerAddInventory.gif)
 
 
-Add New Product:
+**Add New Product:**
+
 Add New Product will prompt the user to input a name, department, price, and quantity of the item they wish to add. The newly updated item can be seen when the user views products again.
 
-[INSERT GIF HERE]
+![Bamazon Manager Add Product](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerAddProduct.gif)
 
 
 ### Bamazon Supervisor
 When running bamazonSupervisor.js, the user is given 2 options to choose from: View Product Sales by Department and Create New Department.
 
-View Product Sales by Department:
+**View Product Sales by Department:**
+
 View Product Sales by Department will print the department ID, department name, overhead costs, product sales, and total profit of each department present in the database. Department ID, department name, overhead costs are all on a seperate table in the database from the items for sale, while product sales are stored in the items for sale table and increases as a transaction is made when using bamazonCustomer.js. Total profit is created by subtracting profit sales from overhead cost.
 
-[INSERT GIF HERE]
+![Bamazon Supervisor View](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonSupervisorView.gif)
 
 
-Create New Department:
+**Create New Department:**
+
 Create New Department doesn't do anything. The instructions in the README file does not have anything for this particular option.
 
+![Bamazon Supervisor New](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonSupervisorNew.gif)
 
-[INSERT GIF HERE]
+
+## Authors
+
+* **Raymond Hui** - *All the work* - [raywhui](https://github.com/raywhui)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details,
+(Probably, this is copypasta'd)
+
+## Acknowledgments
+
+* My professor/TA's
+* Yay
