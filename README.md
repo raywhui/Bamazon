@@ -108,5 +108,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * My professor/TA's
 * Yay
-=======
->>>>>>> 8a01561415e6aaf15415ba83e27ac42ea4540d54
