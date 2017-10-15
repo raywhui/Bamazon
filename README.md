@@ -44,10 +44,7 @@ When running bamazonManager.js, the user is given 4 options to choose from: View
 As it states, this option will print all the products in the database and its relevant information, including ID, name, price, and quantity.
 
 ![Bamazon Manager View](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerView.gif)
-<<<<<<< HEAD
 
-=======
->>>>>>> 8a01561415e6aaf15415ba83e27ac42ea4540d54
 
 **View Low Inventory:**
 
@@ -61,10 +58,7 @@ View Low Inventory will print out products with a quantity of 5 or lower, and in
 Adds more quantity to a particular item. The option will prompt the user to input the ID of the item they wish to add more inventory to and the amount they wish to add. The newly updated item can be seen when the user views products again.
 
 ![Bamazon Manager Add Inventory](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonManagerAddInventory.gif)
-<<<<<<< HEAD
 
-=======
->>>>>>> 8a01561415e6aaf15415ba83e27ac42ea4540d54
 
 **Add New Product:**
 
@@ -81,17 +75,13 @@ When running bamazonSupervisor.js, the user is given 2 options to choose from: V
 View Product Sales by Department will print the department ID, department name, overhead costs, product sales, and total profit of each department present in the database. Department ID, department name, overhead costs are all on a seperate table in the database from the items for sale, while product sales are stored in the items for sale table and increases as a transaction is made when using bamazonCustomer.js. Total profit is created by subtracting profit sales from overhead cost.
 
 ![Bamazon Supervisor View](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonSupervisorView.gif)
-<<<<<<< HEAD
 
-=======
->>>>>>> 8a01561415e6aaf15415ba83e27ac42ea4540d54
 
 **Create New Department:**
 
 Create New Department doesn't do anything. The instructions in the README file does not have anything for this particular option.
 
 ![Bamazon Supervisor New](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonSupervisorNew.gif)
-<<<<<<< HEAD
 
 
 ## Authors
