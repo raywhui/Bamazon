@@ -34,7 +34,7 @@ This CLI uses 3 files: bamazonCustomer.js, bamazonManager.js, and bamazonSupervi
 ### Bamazon Customer
 When running bamazonCustomer.js, the terminal will print out a list of items from your local database, each with an ID, name, and price. The user is then prompted to input the ID and quantity of the item they wish to purchase. Once the transaction is complete, the terminal will show how many of what item they have purcahsed and the total cost. If the user inputs an ID that is not shown or a quantity that the database doesn't have, the terminal will give the user an error message and will be prompted to input ID and quantity again.
 
-[INSERT GIF HERE]
+![Bamazon Customer](https://raw.githubusercontent.com/raywhui/Bamazon/master/assets/bamazonCustomer.gif)
 
 ### Bamazon Manager
 When running bamazonManager.js, the user is given 4 options to choose from: View Products for Sale, View Low Inventory, Add to Inventory, and Add New Product.
@@ -42,7 +42,7 @@ When running bamazonManager.js, the user is given 4 options to choose from: View
 View Products for Sale:
 As it states, this option will print all the products in the database and its relevant information, including ID, name, price, and quantity.
 
-[INSERT GIF HERE]
+[]
 
 
 View Low Inventory:
